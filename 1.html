@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>音乐播放器</title>
+    <link rel="stylesheet" href="css/1.css" media="screen" title="no title">
+  </head>
+  <body>
+        <audio src="./music/" type="audio/ogg" id="id-audio-player" data-index='0'></audio>
+        <!-- 实现播放唱片 -->
+        <div class="disc">
+          <div class="music">
+            <img src="img/1.jpg" alt="" />
+          </div>
+        </div>
+        <!-- 播放列表实现 -->
+        <div class="musicList">
+        </div>
+        <!-- 显示正在播放的歌名 -->
+        <div class="playing"></div>
+        <!-- 播放控件 -->
+        <div class="conturl">
+          <div class="last">|<</div>
+          <div class="play"><img src="./img/play.png"/></div>
+          <div class="next">>|</div>
+        </div>
+        <!-- 进度条 -->
+        <div class="schedule">
+          <div class="allTime" >
+            <span id='span1'>0:00</span>
+            <div class="thisTime"><img src="img/thisTime.jpg" alt="" width='0px'/></div>
+            <span id='span2'>0:00</span>
+          </div>
+          <div class="sound">
+            <img src="./img/sound.jpg" alt="" />
+            <div class="soundSchedule">
+              <div class="soundFloat"><img src="./img/thisTime.jpg" height='5px'/></div>
+            </div>
+        </div>
+        </div>
+  <script src="js/1.js"></script>
+  </body>
+</html>
