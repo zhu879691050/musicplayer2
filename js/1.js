@@ -16,7 +16,7 @@ const bind = function(element, eventName,callback){
 
 
 var a = get('#id-audio-player')
-
+var menu = ['Black Sheep.mp3', 'Let You Win.mp3', 'Written In The Water.mp3', '阴天-李宗盛.mp3', '周杰伦 - 稻香.mp3', '寂寞难耐 (Live)-李宗盛.mp3']
   // 播放暂停键切换
   // Y控制是否切换播放键
 const playButtonChange = function(Y) {
@@ -49,7 +49,6 @@ const playButtonChange = function(Y) {
   // 实现播放器播放暂停功能
   // 加入了进度条控制
   const play = function(Y){
-    a.src = './music/' + menu[0]
     let b = get('.play')
     let p = b.childNodes[0]
     let pauseButton = 'pause.png'
@@ -71,7 +70,7 @@ const playButtonChange = function(Y) {
 
 
   // 实现播放列表
-var menu = ['Black Sheep.mp3', 'Let You Win.mp3', 'Written In The Water.mp3', '阴天-李宗盛.mp3', '周杰伦 - 稻香.mp3', '寂寞难耐 (Live)-李宗盛.mp3']
+
 const bindMenu = function(){
     let musicList = get('.musicList')
     for (var i = 0; i < menu.length; i++) {
